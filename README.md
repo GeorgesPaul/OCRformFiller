@@ -15,7 +15,7 @@ Right now this is a place holder to start this project. Very rough very short ap
 1. Screenshot of form gets send to API
 2. API performs OCR on screenshot. First English, then go through different languages until the best match is found (in case English isn't good enough of a match). Translates to base language (English?) and detects the location of each fillable field. 
 3. API sends back list of field x,y location, field size and human readable field name (translated to English).
-4. Consumer of API performs mouse click at each field location and fills out form field by field. 
+4. Consumer of API performs mouse click at each field location and fills out form field by field (no looking into the DOM as this would make this approach as useless as the other form fillers). 
 
 # Advantages: 
 * safer: no risk of filling off screen hidden fields 
