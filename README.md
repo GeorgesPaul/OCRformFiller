@@ -13,9 +13,12 @@ Instead of having the software look at field names in code, have the software lo
 Right now this is a place holder to start this project. Very rough very short approach: 
 
 1. Screenshot of form gets send to API
-2. API performs OCR on screenshot. First English, then go through different languages until the best match is found (in case English isn't good enough of a match). Translates to base language (English?) and detects the location of each fillable field. 
+2. API performs OCR on screenshot and detect language. First English, in case that results in bad matches (check with library of words) try other languages that the user configured (language list). Translates to base language (English?) and detects the location of each fillable field. 
 3. API sends back list of field x,y location, field size and human readable field name (in original language + translated to English).
-4. Consumer of API performs mouse click at each field location and fills out form field by field (no looking into the DOM as this would make this approach as useless as the other form fillers). 
+4. Consumer of API performs mouse click at each field location and fills out form field by field (no looking into the html/DOM as this would make this approach as useless as the other form fillers). 
+
+# Approach
+Create a quick prototype in Python using OpenCV and tesseract and see how well it works on very different looking forms on random websites. If it works better than whatever is the (commercial) market leader, take it to a next level. 
 
 # Advantages: 
 * safer: no risk of filling off screen hidden fields 
