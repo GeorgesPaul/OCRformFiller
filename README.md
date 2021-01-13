@@ -1,5 +1,5 @@
 # OCRformFiller
-A formfiller that ignores field names and instead fills forms based on what it sees (like humans do) through OCR/ICR.
+A formfiller that ignores field names and instead fills forms based on what it sees (like humans do) through OCR/ICR. Would be able to fill website forms as well as PDF and scanned paper forms. 
 
 # The problem with 2019's webform fillers
 All web-form fillers (that I've been able to find) rely on correct naming of fields to find fields and fill out forms. The problem with this is that form field names in the majority of online forms are either meaningless, missing, wrong or in the wrong human language. Resulting in form fillers almost never filling out a form completely or correctly.
